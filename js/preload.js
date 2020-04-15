@@ -50,8 +50,8 @@ config.css.forEach(async (filePath, i) => {
   head.append(styleElem);
 
   console.debug(`Loading: ${filePath}`);
-  let css = await fsp.readFile(filePath, 'utf8');
 
+  let css = await fsp.readFile(filePath, 'utf8');
   styleElem.textContent = css;
 
   fs.watch(filePath, debounce(async () => {
