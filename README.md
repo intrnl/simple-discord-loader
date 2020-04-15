@@ -29,9 +29,9 @@ The latter is recommended on Linux if you do not have any sudo rights.
    - macOS: `/Applications/Discord.app/Contents/Resources/`
    - Linux:
      - Debian, Ubuntu and any other Debian based distros  
-       `/usr/share/discord/resources`
+       `/usr/share/discord/resources/`
      - Fedora and other Red Hat based distros (RPMFusion)  
-       `/usr/lib64/discord/resources`
+       `/usr/lib64/discord/resources/`
      - Arch Linux and other distros  
        `/opt/discord/resources/`
 2. Create a directory named `app`
