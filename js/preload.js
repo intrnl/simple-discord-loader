@@ -47,12 +47,13 @@ config.css.forEach(async (filePath, i) => {
 
   let styleElem = document.createElement('style');
   styleElem.id = i;
-  head.append(styleElem);
-
+  
   console.debug(`Loading: ${filePath}`);
-
+  
   let css = await fsp.readFile(filePath, 'utf8');
   styleElem.textContent = css;
+
+  head.append(styleElem);
 
   fs.watch(filePath, debounce(async () => {
     console.debug(`Reloading: ${filePath}`);
