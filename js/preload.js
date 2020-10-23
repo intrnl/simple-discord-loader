@@ -46,7 +46,7 @@ config.css.forEach(async (filePath, i) => {
   filePath = path.resolve(dataDirectory, filePath);
 
   let styleElem = document.createElement('style');
-  styleElem.id = i;
+  styleElem.setAttribute('data-index', i);
   
   console.debug(`Loading: ${filePath}`);
   
